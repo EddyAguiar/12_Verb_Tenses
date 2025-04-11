@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 12 English Tenses Flashcards</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .flashcards-container {
+            display: grid;
+            gap: 15px;
+        }
+        .flashcard {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .flashcard:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            color: #3498db;
+            font-size: 1.2em;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #27ae60;
+            font-weight: 600;
+        }
+        .explanation {
+            display: none;
+            margin-top: 10px;
+            color: #7f8c8d;
+            border-left: 3px solid #3498db;
+            padding-left: 10px;
+        }
+        .examples {
+            display: none;
+            margin-top: 10px;
+            background: #e8f4fc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .example-item {
+            margin: 5px 0;
+        }
+        .check-emoji {
+            color: #27ae60;
+            margin-right: 5px;
+        }
+        .time-emoji {
+            color: #e67e22;
+            margin-right: 5px;
+        }
+        .verb-emoji {
+            color: #9b59b6;
+            margin-right: 5px;
+        }
+        .category {
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 30px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 12 English Tenses Flashcards</h1>
+    <p class="subtitle"><em>Click any card to reveal details!</em></p>
+    
+    <div class="flashcards-container">
+        <div class="category">PRESENT TENSES</div>
+        
+        <!-- Simple Present -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">1. What is the <strong>Simple Present Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for habits, general truths, and fixed arrangements.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + V1 (base form)<br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> always, often, usually, every day<br>
+                <span class="check-emoji">⚠️</span> For <strong>he/she/it</strong>, add <strong>-s/-es</strong> to the verb.
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> I <strong>eat</strong> breakfast at 7 AM daily.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> The sun <strong>rises</strong> in the east.</div>
+            </div>
+        </div>
+
+        <!-- Present Continuous -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">2. What is the <strong>Present Continuous Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions happening now or temporary situations.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + am/is/are + V1 + <strong>-ing</strong><br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> now, at the moment, currently<br>
+                <span class="check-emoji">⚠️</span> Some verbs (like, want, know) are <strong>not</strong> used in continuous forms.
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> She <strong>is studying</strong> for her exams now.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> They <strong>are playing</strong> football in the park.</div>
+            </div>
+        </div>
+
+        <!-- Present Perfect -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">3. What is the <strong>Present Perfect Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions that happened at an unspecified time or have present results.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + have/has + V3 (past participle)<br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> already, yet, ever, never, just<br>
+                <span class="check-emoji">⚠️</span> Focuses on the <strong>result</strong> or <strong>experience</strong>, not when it happened.
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> I <strong>have finished</strong> my homework.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> She <strong>has visited</strong> Paris three times.</div>
+            </div>
+        </div>
+
+        <!-- Present Perfect Continuous -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">4. What is the <strong>Present Perfect Continuous Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions that started in the past and continue to the present (emphasizes duration).
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + have/has + been + V1 + <strong>-ing</strong><br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> for, since, all day/week<br>
+                <span class="check-emoji">⚠️</span> Often used with <strong>action verbs</strong> (work, study, wait).
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> He <strong>has been working</strong> here since 2010.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> They <strong>have been waiting</strong> for hours.</div>
+            </div>
+        </div>
+
+        <div class="category">PAST TENSES</div>
+
+        <!-- Simple Past -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">5. What is the <strong>Simple Past Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for completed actions at a specific time in the past.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + V2 (past form)<br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> yesterday, last week, in 2010, ago<br>
+                <span class="check-emoji">⚠️</span> Regular verbs end in <strong>-ed</strong>, irregular verbs change form (go → went).
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> I <strong>watched</strong> a movie last night.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> She <strong>went</strong> to Spain in 2019.</div>
+            </div>
+        </div>
+
+        <!-- Past Continuous -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">6. What is the <strong>Past Continuous Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions that were in progress at a specific time in the past.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + was/were + V1 + <strong>-ing</strong><br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> while, when, at 5 PM yesterday<br>
+                <span class="check-emoji">⚠️</span> Often used for <strong>interrupted actions</strong> ("I was cooking when the phone rang").
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> They <strong>were playing</strong> chess at 8 PM.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> She <strong>was studying</strong> when I called her.</div>
+            </div>
+        </div>
+
+        <!-- Past Perfect -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">7. What is the <strong>Past Perfect Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions completed before another action in the past.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + had + V3 (past participle)<br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> already, by the time, before<br>
+                <span class="check-emoji">⚠️</span> Shows the <strong>order of past events</strong> ("After I had eaten, I left").
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> She <strong>had finished</strong> her work before the meeting.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> They <strong>had already left</strong> when we arrived.</div>
+            </div>
+        </div>
+
+        <!-- Past Perfect Continuous -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">8. What is the <strong>Past Perfect Continuous Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions that were ongoing before another past action (emphasizes duration).
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + had + been + V1 + <strong>-ing</strong><br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> for, since, how long<br>
+                <span class="check-emoji">⚠️</span> Focuses on <strong>duration</strong> ("He had been working for 5 hours before the break").
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> I <strong>had been waiting</strong> for 30 minutes when the bus came.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> They <strong>had been arguing</strong> before we intervened.</div>
+            </div>
+        </div>
+
+        <div class="category">FUTURE TENSES</div>
+
+        <!-- Simple Future -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">9. What is the <strong>Simple Future Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions that will happen later.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + will/shall + V1 (base form)<br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> tomorrow, next week, soon, in 2030<br>
+                <span class="check-emoji">⚠️</span> "Shall" is formal and mostly used with <strong>I/we</strong>.
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> She <strong>will call</strong> you tomorrow.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> We <strong>shall meet</strong> at the café.</div>
+            </div>
+        </div>
+
+        <!-- Future Continuous -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">10. What is the <strong>Future Continuous Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions that will be in progress at a specific future time.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + will be + V1 + <strong>-ing</strong><br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> at this time tomorrow, next Monday at 8 PM<br>
+                <span class="check-emoji">⚠️</span> Emphasizes the <strong>duration</strong> of a future action.
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> They <strong>will be traveling</strong> to Japan this time next month.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> I <strong>will be working</strong> at 9 AM tomorrow.</div>
+            </div>
+        </div>
+
+        <!-- Future Perfect -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">11. What is the <strong>Future Perfect Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions that will be completed before a specific future time.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + will have + V3 (past participle)<br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> by, by the time, before<br>
+                <span class="check-emoji">⚠️</span> Focuses on <strong>completion</strong> before another future event.
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> She <strong>will have finished</strong> her project by Friday.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> They <strong>will have left</strong> before we arrive.</div>
+            </div>
+        </div>
+
+        <!-- Future Perfect Continuous -->
+        <div class="flashcard" onclick="revealCard(this)">
+            <div class="question">12. What is the <strong>Future Perfect Continuous Tense</strong>?</div>
+            <div class="answer">
+                <span class="check-emoji">✔️</span> Used for actions that will have been ongoing for a duration before a future time.
+            </div>
+            <div class="explanation">
+                <span class="verb-emoji">🔹</span> <strong>Structure:</strong> Subject + will have been + V1 + <strong>-ing</strong><br>
+                <span class="time-emoji">⏳</span> <strong>Signal words:</strong> for, since, by the time<br>
+                <span class="check-emoji">⚠️</span> Emphasizes <strong>duration</strong> ("By 2025, I will have been working here for 10 years").
+            </div>
+            <div class="examples">
+                <div class="example-item"><span class="check-emoji">✓</span> He <strong>will have been sleeping</strong> for 8 hours by 7 AM.</div>
+                <div class="example-item"><span class="check-emoji">✓</span> They <strong>will have been waiting</strong> for 2 hours when the train arrives.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function revealCard(card) {
+            const answer = card.querySelector('.answer');
+            const explanation = card.querySelector('.explanation');
+            const examples = card.querySelector('.examples');
+
+            if (answer.style.display === 'block') {
+                if (explanation.style.display === 'block') {
+                    if (examples.style.display === 'block') {
+                        // Reset to question
+                        answer.style.display = 'none';
+                        explanation.style.display = 'none';
+                        examples.style.display = 'none';
+                    } else {
+                        examples.style.display = 'block';
+                    }
+                } else {
+                    explanation.style.display = 'block';
+                }
+            } else {
+                answer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
